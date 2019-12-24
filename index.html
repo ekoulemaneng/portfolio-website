@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ekoulemaneng | Dev</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            height: 100vh;
+        }
+        div {
+            margin: auto;
+            top: 40vh;
+            position: relative;
+        }
+        a {
+            display: block;
+            text-align: center;
+        }
+        button {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 2rem;
+            font-weight: 700;
+            color: white;
+        }
+        #french {
+            background-color: darkblue;
+            border-color: darkblue;
+            border-radius: 3%;
+        }
+        #english {
+            background-color: darkred;
+            border-color: darkred;
+            border-radius: 3%;
+        }
+    </style>
+</head>
+<body onload="redirectUrl()">
+    <noscript>
+        <div>
+            <a href="fr.index.html"><button id="french">Cliquez pour accdéder à la version française du site web.</button id="french"></a>
+            <a href="en.index.html"><button id="english">Click to access the english version of the website.</button id="english"></a>
+        </div>
+    </noscript>
+    <script>
+        function redirectUrl() {
+            let lang = window.navigator.language.slice(0, 2);
+            if (['fr', 'es', 'pt', 'it'].includes(lang)) window.location.assign('fr.index.html');
+            else window.location.assign('en.index.html')
+        }
+    </script>
+</body>
+</html>

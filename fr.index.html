@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Ekoulé Maneng Charly Karl (ekoulemaneng@gmail.com)">
+        <meta name="description" content="Le site web présente mes compétences et mes réalisations du développeur web et mobile. Il donne aussi l'opportunité aux internautes de me contacter pour éventuellement me soumettre des projets.">        
+        <meta name="keywords" content="développement web, développement mobile, html5, css3, javascript, node.js">
+        <title>ekoulemaneng | Développeur web et mobile</title>
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Patrick+Hand|Roboto&display=swap" rel="stylesheet">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            html, body, header {
+                height: 100%;
+            } 
+            body {
+                font-family: 'Noticia Text', serif;
+            }
+            #blink-stick {
+                color: burlywood;
+                animation: blink 1s infinite;
+            }
+            h1, h2, h3, h4, h5, h6, nav ul li {
+                font-family: 'Roboto', sans-serif;
+            }
+            #brand-name {
+                font-family: 'Patrick Hand', cursive;
+                font-size: 2.25rem;
+                color: floralwhite;
+            }
+            .jumbotron-image {
+                background: url(/assets/img/jumbotron.png) no-repeat center center fixed;
+                background-size: cover;
+                height: 100%;
+            }
+            .jumbotron #text {
+                top: 50%;
+                position: relative;
+            }
+            a.nav-link.menu-item {
+                color: white !important;
+                font-weight: 600;
+            }
+            a.nav-link.menu-item.active {
+                background-color: indigo;
+                border-radius: 3%;
+                text-decoration: none !important;
+            }
+            a.nav-link.menu-item:hover {
+                text-decoration-style: solid;
+                text-decoration-line: overline;
+                text-decoration-color: white;
+            }
+            #other-version {
+                background-color: violet;
+                font-size: smaller;
+                border-radius: 50%;
+                height: 2.25rem;
+                width: 2.25rem;
+                text-align: center;
+                margin-right: -1rem !important;
+                margin-left: .25rem;
+                font-family: sans-serif;
+            }
+            #other-version:hover {
+                background-color: white;
+                color: violet !important;
+            }
+            .section-title {
+                text-decoration-line: overline;
+                text-decoration-color: chocolate;
+            }
+            .skills-title {
+                border-color: black !important;
+                border-width: 1px !important;
+            }
+            li.list-inline-item.skill {
+                color: whitesmoke;
+                background: dimgray;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                margin-top: .25rem;
+                border-radius: 5%;
+            }
+            #contact {
+                background: url(/assets/img/map.png) no-repeat fixed;
+                background-size: cover;
+            }
+            @keyframes blink {
+                0% { opacity: 0; }
+                50% { opacity: 1; }
+                100% { opacity: 0; }
+            }
+            @media (max-width: 576px) {
+                .jumbotron #text h1, .jumbotron #text p {
+                    font-size: 1rem !important;
+                    line-height: 1rem !important;
+                }
+                #brand-name {
+                    font-size: 1.25rem;
+                }
+                #informations p {
+                    font-size: 1rem !important;
+                }
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" id="page-top">    
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <a class="navbar-brand" href="#page-top"><span id="brand-name" class="h4 font-weight-bold">ekoulemaneng</span> <span id="blink-stick" class="h3 font-weight-bold">|</span> <span class="font-italic">Dev</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="#about">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="#portfolio">Réalisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="https://medium.com/geek-manioc" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="#contact">Contact</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" id="other-version" href="/en.index.html">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="jumbotron jumbotron-fluid jumbotron-image">
+                <div class="container-fluid text-center text-light" id="text">
+                    <h1 class="h4 text-uppercase">Bienvenue dans mon Dev Studio !</h1>
+                    <p class="font-weight-bold h4">Heureux de faire votre connaissance <br>et de mettre mes compétences à votre service.</p>
+                    <a class="btn btn-info font-weight-bold" href="#portfolio">Mes réalisations</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="about" class="bg-light px-3 py-5">
+                <h1 class="section-title text-center font-weight-bold mb-4 h2">A PROPOS</h1>
+                <h2 class="text-center d-md-none font-weight-bold h4">Développeur Web et Mobile</h2>
+                <hr class="d-md-none bg-dark w-25">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 my-auto px-5" id="picture">
+                            <img class="img-fluid rounded-circle mx-auto d-block" src="assets/img/portrait.png" alt="Ma photo-portrait">
+                        </div>
+                        <div class="col-12 col-md-8 px-0 px-md-2 px-lg-5 mt-3 mt-md-0" id="description">
+                            <h2 class="text-center d-none d-md-block font-weight-bold h4">Développeur Web et Mobile</h2>
+                            <hr class="d-none d-md-block bg-dark w-25">
+                            <p class="lead mb-2">Je m'appelle Ekoulé Maneng Charly Karl. Je développe des sites et applications web et ainsi que des applications mobile. Je vis à Yaoundé au Cameroun.</p>
+                            <p class="lead mb-2">Passionné à l'origine par le monde de l'électronique et de l'informatique, j'avais décidé de dévenir développeur par goût de l'innovation.</p>
+                            <p class="lead mb-2">Après de longues années d'études en autodidacte et après avoir surmontés maints obstacles, j'ai réussi à acquérir les compétences en conception et programmation dont je rêvais.</p>
+                            <p class="lead mb-2">Vous avez un projet de site web, d'application web ou d'application mobile à réaliser ? Vous recherchez l'expertise nécessaire afin de le réaliser ?</p>
+                            <div class="text-center mt-3">
+                                <a class="btn btn-primary font-weight-bold" href="#contact">Contactez-moi !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="px-3 py-5">
+                <h1 class="section-title text-center font-weight-bold mb-4 h2">COMPETENCES</h1>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Conception UX/UI</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">Applications web</li>
+                        <li class="list-inline-item skill">Applications mobiles</li>
+                        <li class="list-inline-item skill">Sites web adaptatifs</li>
+                        <li class="list-inline-item skill">Pages d'accueil</li>
+                        <li class="list-inline-item skill">Maquettes</li>
+                        <li class="list-inline-item skill">Prototypes</li>
+                        <li class="list-inline-item skill">Sitemap</li>
+                        <li class="list-inline-item skill">Gimp</li>
+                        <li class="list-inline-item skill">Inskape</li>
+                        <li class="list-inline-item skill">MockFlow</li>
+                        <li class="list-inline-item skill">Figma</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Développement web fullstack</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">HTML5</li>
+                        <li class="list-inline-item skill">CSS3</li>
+                        <li class="list-inline-item skill">JavaScript</li>
+                        <li class="list-inline-item skill">Bootstrap</li>
+                        <li class="list-inline-item skill">Sass</li>
+                        <li class="list-inline-item skill">jQuery</li>
+                        <li class="list-inline-item skill">AngularJS</li>
+                        <li class="list-inline-item skill">React</li>
+                        <li class="list-inline-item skill">Redux</li>
+                        <li class="list-inline-item skill">D3</li>
+                        <li class="list-inline-item skill">Node.js</li>
+                        <li class="list-inline-item skill">Express</li>
+                        <li class="list-inline-item skill">Yarn</li>
+                        <li class="list-inline-item skill">Gulp</li>
+                        <li class="list-inline-item skill">Parcel</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Développement d'applications mobiles</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">Cordova</li>
+                        <li class="list-inline-item skill">Phonegap</li>
+                        <li class="list-inline-item skill">Framework 7</li>
+                        <li class="list-inline-item skill">ReactNative</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Bases de données</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">MongoDB</li>
+                        <li class="list-inline-item skill">Mongoose</li>
+                        <li class="list-inline-item skill">Firebase</li>
+                        <li class="list-inline-item skill">SQLite</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Développement d'extentions de navigateurs web</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">Firefox</li>
+                        <li class="list-inline-item skill">Chrome</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="skills-title h3 border-bottom">Outils de développement et de productivité</h2>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skill">Git</li>
+                        <li class="list-inline-item skill">GitHub</li>
+                        <li class="list-inline-item skill">VS Code</li>
+                        <li class="list-inline-item skill">Ligne de commande</li>
+                        <li class="list-inline-item skill">Outils du développement Chrome et Firefox</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio" class="bg-light px-3 py-5">
+                <h1 class="section-title text-center font-weight-bold mb-4 h2">REALISATIONS</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card col col-sm-6 col-md-4 col-lg-3">
+                            <img src="" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title"></h5>
+                                <p class="card-text"></p>
+                                <a href="">Voir plus...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="px-3 py-5">
+                <h1 class="section-title text-center font-weight-bold mb-4 h2">CONTACT</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 px-md-4 order-2 order-md-1">
+                            <form method="POST">
+                                <div class="form-group">
+                                    <input class="form-control border border-dark" type="text" name="name" placeholder="Nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control border border-dark" type="email" name="email" placeholder="Courriel" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control border border-dark" type="tel" name="tel" placeholder="Téléphone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control border border-dark" name="message" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-outline-dark btn-lg btn-block" type="submit">Envoyez!</button>    
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6 px-md-4 mb-3 order-1 order-md-2" id="informations">
+                            <p class="lead font-weight-bold mb-2 ml-3 pl-3">Ekoulé Maneng Charly Karl</p>
+                            <p class="lead font-weight-bold mb-2"><i class="fas fa-home mr-2"></i>Quartier Mimboman, Yaoundé, Cameroun.</p>
+                            <p class="lead font-weight-bold mb-2"><i class="fas fa-envelope mr-2"></i><a href="mailto:ekoulemaneng@gmail.com?subject=ekoulemaneng%20portfolio%website:" class="text-dark text-decoration-none">ekoulemaneng@gmail.com</a></p>
+                            <p class="lead font-weight-bold mb-2"><i class="fas fa-phone mr-2"></i>(+237) <a href="tel:+237672655600" class="text-dark text-decoration-none">672655600</a> | <a href="tel:+237691777699" class="text-dark text-decoration-none">691777699</a></p>
+                            <p class="lead font-weight-bold text-center mb-2"><a href="https://github.com/ekoulemaneng" target="_blank" class="text-dark mx-3"><i class="fab fa-github fa-2x"></i></a><a href="https://www.linkedin.com/in/charly-karl-ekoul%C3%A9-maneng-1154632a" target="_blank" class="text-dark mx-3"><i class="fab fa-linkedin fa-2x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark text-light text-center py-1">Copyright 2020 &copy; ekoulemaneng</footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            window.addEventListener('scroll', event => {
+                const element = document.querySelector('nav');
+                if (window.scrollY >= 15) element.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                else element.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+            });
+        </script>
+    </body>
+</html>
